@@ -1,0 +1,216 @@
+{
+  "dataset_overview": {
+    "articles": 1800,
+    "categories": [
+      "POLITICS",
+      "ENTERTAINMENT",
+      "BUSINESS",
+      "SPORTS",
+      "TECH",
+      "WELLNESS"
+    ],
+    "category_distribution": {
+      "POLITICS": 300,
+      "ENTERTAINMENT": 300,
+      "BUSINESS": 300,
+      "SPORTS": 300,
+      "TECH": 300,
+      "WELLNESS": 300
+    },
+    "average_word_count": 30.705555555555556,
+    "average_character_count": 182.49666666666667
+  },
+  "tfidf_insights": {
+    "POLITICS": [
+      "trump",
+      "donald",
+      "donald trump",
+      "republican",
+      "president"
+    ],
+    "ENTERTAINMENT": [
+      "star",
+      "film",
+      "new",
+      "movie",
+      "got"
+    ],
+    "BUSINESS": [
+      "company",
+      "business",
+      "ceo",
+      "job",
+      "day"
+    ],
+    "SPORTS": [
+      "nfl",
+      "player",
+      "game",
+      "team",
+      "win"
+    ],
+    "TECH": [
+      "facebook",
+      "apple",
+      "week",
+      "google",
+      "new"
+    ],
+    "WELLNESS": [
+      "life",
+      "health",
+      "study",
+      "sleep",
+      "cancer"
+    ]
+  },
+  "pos_insights": {
+    "highest_proper_noun_category": "SPORTS",
+    "highest_adjective_category": "WELLNESS"
+  },
+  "syntax_insights": {
+    "longest_average_sentences": "POLITICS",
+    "most_noun_phrases": "WELLNESS"
+  },
+  "sentiment_insights": {
+    "most_positive_category": "WELLNESS",
+    "most_negative_category": "POLITICS",
+    "average_sentiment_by_category": {
+      "POLITICS": -0.02867033333333333,
+      "ENTERTAINMENT": 0.13134866666666667,
+      "BUSINESS": 0.09533966666666667,
+      "SPORTS": 0.07093866666666666,
+      "TECH": 0.08350066666666667,
+      "WELLNESS": 0.19707533333333332
+    }
+  },
+  "classification_performance": {
+    "best_model": "Linear SVM",
+    "deployment_model": "Multinomial Naive Bayes",
+    "model_metrics": [
+      {
+        "Model": "Linear SVM",
+        "Accuracy": 0.7194444444444444,
+        "Macro F1": 0.7185107357964958,
+        "Weighted F1": 0.7185107357964957,
+        "CV Macro F1 Mean": 0.6817499854390338,
+        "CV Macro F1 Std": 0.0033390697562315653
+      },
+      {
+        "Model": "Multinomial Naive Bayes",
+        "Accuracy": 0.7083333333333334,
+        "Macro F1": 0.7065569348445128,
+        "Weighted F1": 0.7065569348445128,
+        "CV Macro F1 Mean": 0.6844160676296963,
+        "CV Macro F1 Std": 0.009119701530347243
+      },
+      {
+        "Model": "Logistic Regression",
+        "Accuracy": 0.6777777777777778,
+        "Macro F1": 0.6767665632363301,
+        "Weighted F1": 0.6767665632363301,
+        "CV Macro F1 Mean": 0.6081359084748837,
+        "CV Macro F1 Std": 0.008463471068330133
+      }
+    ]
+  },
+  "entity_insights": {
+    "entity_type_counts": {
+      "PERSON": 671,
+      "ORG": 621,
+      "DATE": 308,
+      "GPE": 237,
+      "NORP": 82,
+      "EVENT": 35,
+      "MONEY": 32
+    },
+    "most_common_entities": [
+      {
+        "label": "GPE",
+        "text": "U.S.",
+        "count": 25
+      },
+      {
+        "label": "NORP",
+        "text": "Americans",
+        "count": 18
+      },
+      {
+        "label": "ORG",
+        "text": "Trump",
+        "count": 13
+      },
+      {
+        "label": "ORG",
+        "text": "NFL",
+        "count": 13
+      },
+      {
+        "label": "PERSON",
+        "text": "Trump",
+        "count": 11
+      },
+      {
+        "label": "DATE",
+        "text": "Friday",
+        "count": 10
+      },
+      {
+        "label": "NORP",
+        "text": "Republicans",
+        "count": 9
+      },
+      {
+        "label": "ORG",
+        "text": "GOP",
+        "count": 9
+      },
+      {
+        "label": "DATE",
+        "text": "2012",
+        "count": 8
+      },
+      {
+        "label": "ORG",
+        "text": "Apple",
+        "count": 7
+      },
+      {
+        "label": "GPE",
+        "text": "San Francisco",
+        "count": 7
+      },
+      {
+        "label": "GPE",
+        "text": "California",
+        "count": 7
+      },
+      {
+        "label": "DATE",
+        "text": "today",
+        "count": 7
+      },
+      {
+        "label": "GPE",
+        "text": "America",
+        "count": 7
+      },
+      {
+        "label": "NORP",
+        "text": "Republican",
+        "count": 6
+      }
+    ]
+  },
+  "business_recommendations": [
+    "Use the classifier as a first-pass routing layer for editors or analysts.",
+    "Track sentiment shifts within each category to monitor coverage tone over time.",
+    "Use entity extraction to build searchable dashboards around people, organizations, and places.",
+    "Pair TF-IDF and entity trends to identify emerging subtopics within major categories."
+  ],
+  "limitations": [
+    "The dataset uses headlines plus short descriptions, not full article bodies.",
+    "Sentiment is lexicon-based, so it may miss subtle sarcasm or domain-specific tone.",
+    "The final model is a strong baseline but not a transformer-based state-of-the-art system."
+  ]
+}

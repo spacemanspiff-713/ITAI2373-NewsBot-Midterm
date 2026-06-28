@@ -1,9 +1,9 @@
 # Submission Checklist
 
 ## Repository
-- [ ] Push `ITAI2373-NewsBot-Midterm` to your public GitHub portfolio repository
+- [x] Push `ITAI2373-NewsBot-Midterm` to your public GitHub portfolio repository
 - [ ] Add the final GitHub repo URL to the notebook header if required
-- [ ] Confirm the repo contains the notebook, data sample, outputs, README, requirements, and reflection files
+- [x] Confirm the repo contains the notebook, data sample, outputs, README, requirements, and reflection files
 
 ## Notebook
 - [x] Real dataset sample replaces placeholder sample data
@@ -24,9 +24,9 @@
 - [x] `streamlit_app.py` is implemented
 - [x] Temporal-trends section is included for advanced analysis
 - [x] Decide whether to mention the bonus app explicitly in the final submission notes or README intro
-- [ ] Deploy the app after the GitHub repo is public if you want the hosted bonus link
+- [x] Deploy the app after the GitHub repo is public if you want the hosted bonus link
 
 ## Final Review
-- [ ] Check the notebook header for any remaining TODOs
-- [ ] Confirm all filenames match assignment expectations
-- [ ] Make sure the repository is public before submitting
+- [x] Check the notebook header for any remaining TODOs
+- [x] Confirm all filenames match assignment expectations
+- [x] Make sure the repository is public before submitting

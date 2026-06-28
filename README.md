@@ -3,6 +3,9 @@
 ## Overview
 This repository contains my ITAI 2373 midterm project, a NewsBot Intelligence System built in Jupyter Notebook. The project uses NLP techniques to analyze and classify news articles, including preprocessing, TF-IDF feature extraction, part-of-speech analysis, syntax analysis, sentiment analysis, named entity recognition, and multi-class classification.
 
+## Streamlit can be viewed here:
+https://itai2373-newsbot-midterm-uu8msupjisovveetrhcnpf.streamlit.app/
+
 ## Project Files
 - [Midterm_NewsBot_Intelligence_System_completed.ipynb](Midterm_NewsBot_Intelligence_System_completed.ipynb): main notebook for the assignment
 - [streamlit_app.py](streamlit_app.py): bonus interactive Streamlit dashboard and live NewsBot demo
